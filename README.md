@@ -1,2 +1,2 @@
 # windows-iot-demo
-ZhangGaoxing's windows iot samples
+ZhangGaoxing's Windows 10 Iot samples
