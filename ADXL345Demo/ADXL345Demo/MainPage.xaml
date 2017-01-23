@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="ADXL345Demo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ADXL345Demo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="ADXL345 Demo" FontSize="40" Margin="15" />
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="30">
+                X : <Run x:Name="X" /> g
+            </TextBlock>
+            <TextBlock FontSize="30">
+                Y : <Run x:Name="Y" /> g
+            </TextBlock>
+            <TextBlock FontSize="30">
+                Z : <Run x:Name="Z" /> g
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
