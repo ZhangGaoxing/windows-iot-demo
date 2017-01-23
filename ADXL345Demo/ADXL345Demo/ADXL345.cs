@@ -109,5 +109,13 @@ namespace ADXL345Demo
 
             return accel;
         }
+        
+        /// <summary>
+        /// Cleanup
+        /// </summary>
+        public void Dispose()
+        {
+            adxl345.Dispose();
+        }
     }
 }
