@@ -1,7 +1,7 @@
 # ZhangGaoxing's ADXL345 Demo
 This is a Windows IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
-# Connect
+## Connect
 ADXL345 connect to SPI
 * VCC - 3.3 V
 * GND -  GND
@@ -10,14 +10,14 @@ ADXL345 connect to SPI
 * SDA - Pin19
 * SCL - Pin23
 
-# Reference
+## Reference
 In Chinese : http://wenku.baidu.com/view/87a1cf5c312b3169a451a47e.html
 
 In English : https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf
 
 ms-iot some code : https://github.com/ms-iot/samples/tree/develop/SPIAccelerometer/CS
 
-# How to Use
+## How to Use
 First, you need to create a ADXL345 object. After that you should call InitializeAsync() to initialize. 
 
 Second, ReadAcceleration(). 
