@@ -11,10 +11,10 @@ And his partial code : https://github.com/jeremylindsayni/Magellanic.Sensors.BH1
 # What Contains
 In BH1750FVI.cs file
 
-## It contains two constructors. 
+## It contains two constructors
 One constructor should be passed AddressSetting and MeasurementMode, two enumeration type. Another constructor is based on the value above, and added the enumeration type of LightTransmittance to set the light transmittance.
 
-## Three methods. 
+## Three methods 
 InitializeAsync(), Read() and Dispose(). InitializeAsync() is used to initializing the sensor. Read() returns a double type sensor data. Dispose() is a cleanup method.
 
 # How to Use
