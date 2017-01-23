@@ -1,6 +1,7 @@
 # ZhangGaoxing's ADXL345 Demo
 This is a Windows IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
+# Connect
 ADXL345 connect to SPI
 * VCC - 3.3 V
 * GND -  GND
