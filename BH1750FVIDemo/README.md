@@ -1,6 +1,12 @@
 # ZhangGaoxing's BH1750FVI Demo
 This is a Windows IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
+# Connect
+* SDA - Pin3
+* SCL - Pin5
+* VCC - 3.3V
+* GND - GND
+
 # Reference
 In Chinese : http://wenku.baidu.com/view/5d0bcafd04a1b0717fd5ddee.html http://wenku.baidu.com/view/8a2e8a7e31b765ce05081443.html
 
@@ -20,5 +26,7 @@ InitializeAsync(), Read() and Dispose(). InitializeAsync() is used to initializi
 # How to Use
 #### Attention, this project not included try{} catch{}
 First, you need to create a BH1750FVI object. After that you should call InitializeAsync() to initialize.
+
 Second, Read().
+
 If you want to close the sensor, call Dispose().
