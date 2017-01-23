@@ -17,4 +17,8 @@ In English : https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.p
 ms-iot some code : https://github.com/ms-iot/samples/tree/develop/SPIAccelerometer/CS
 
 # How to Use
-First, you need to create a ADXL345 object. After that you should call InitializeAsync() to initialize. Second, ReadAcceleration(). If you want to close the sensor, call Dispose().
+First, you need to create a ADXL345 object. After that you should call InitializeAsync() to initialize. 
+
+Second, ReadAcceleration(). 
+
+If you want to close the sensor, call Dispose().
