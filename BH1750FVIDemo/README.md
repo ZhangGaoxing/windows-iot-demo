@@ -32,7 +32,7 @@ await sensor.InitializeAsync();
 ```
 * Second, Read().
 ```C#
-string data = sensor.Read();
+double data = sensor.Read();
 ```
 * If you want to close the sensor, call Dispose().
 ```C#
