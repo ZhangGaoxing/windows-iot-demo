@@ -13,7 +13,7 @@ In Chinese : http://wenku.baidu.com/view/18288272fc4ffe473368abb5.html
 ## Attention
 HC-SR04 requires 5 volts and it's measuring result is influenced by the surface of an object.
 
-This project not included try{} catch{}.
+This project does not include try-catch.
 
 ## What Contains
 In HCSR04.cs file
