@@ -24,7 +24,7 @@ One constructor should be passed AddressSetting and MeasurementMode, two enumera
 InitializeAsync(), Read() and Dispose(). InitializeAsync() is used to initializing the sensor. Read() returns a double type sensor data. Dispose() is a cleanup method.
 
 ## How to Use
-#### Attention, this project not included try{} catch{}
+* Attention, this project not included try{} catch{}
 * First, you need to create a BH1750FVI object. After that you should call InitializeAsync() to initialize.
 ```C#
 BH1750FVI sensor = new BH1750FVI(AddressSetting.AddPinLow, MeasurementMode.ContinuouslyHighResolutionMode, LightTransmittance.Hundred);
