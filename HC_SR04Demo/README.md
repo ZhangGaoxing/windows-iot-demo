@@ -23,8 +23,16 @@ You need to pass Trig and Echo pin value to create a HC-SR04 object.
 Initialize(), ReadAsync() and Dispose(). Initialize() is used to initializing the sensor. ReadAsync() returns a double type sensor data. Dispose() is a cleanup method.
 
 ## How to Use
-First, you need to create a HCSR04 object. After that you should call Initialize() to initialize. 
-
-Second, ReadAsync(). 
-
-If you want to close the sensor, call Dispose().
+* First, you need to create a HCSR04 object. After that you should call Initialize() to initialize. 
+```C#
+HCSR04 sensor = new HCSR04(17, 27);
+sensor.Initialize();
+```
+* Second, ReadAsync(). 
+```C#
+double distance = await sensor.ReadAsync();
+```
+* If you want to close the sensor, call Dispose().
+```C#
+sensor.Dispose();
+```
