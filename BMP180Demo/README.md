@@ -4,7 +4,7 @@ This is a Windows IoT Core project on the Raspberry Pi 2/3, coded by C#.
 ## Attention
 Sensor data 'Altitude' is inaccurate !
 
-This project not included try-catch.
+This project does not include try-catch.
 
 ## Connect
 * SDA - Pin3
