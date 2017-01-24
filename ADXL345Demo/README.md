@@ -21,10 +21,11 @@ ms-iot some code : https://github.com/ms-iot/samples/tree/develop/SPIAcceleromet
 * First, you need to create a ADXL345 object. After that you should call InitializeAsync() to initialize. 
 ```C#
 ADXL345 sensor = new ADXL345(0, GravityRange.Four);
+await sensor.InitializeAsync();
 ```
 * Second, ReadAcceleration(). 
 ```C#
-await sensor.InitializeAsync();
+var accel = sensor.ReadAcceleration();
 ```
 * If you want to close the sensor, call Dispose().
 ```C#
