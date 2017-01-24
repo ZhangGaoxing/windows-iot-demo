@@ -1,6 +1,11 @@
 # ZhangGaoxing's BMP180 Demo
 This is a Windows IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
+## Attention
+Sensor data 'Altitude' is inaccurate !
+
+This project not included try-catch.
+
 ## Connect
 * SDA - Pin3
 * SCL - Pin5
