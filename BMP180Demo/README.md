@@ -42,16 +42,16 @@ public void Dispose()
 ```
 
 ## How to Use
-First, you need to create a BMP180 object. After that you should call InitializeAsync() to initialize.
+* First, you need to create a BMP180 object. After that you should call InitializeAsync() to initialize.
 ```C#
 BMP180 sensor = new BMP180(Resolution.UltrHighResolution);
 await sensor.InitializeAsync();
 ```
-Second, ReadAsync().
+* Second, ReadAsync().
 ```C#
 var data = await sensor.ReadAsync();
 ```
-If you want to close the sensor, call Dispose().
+* If you want to close the sensor, call Dispose().
 ```C#
 sensor.Dispose();
 ```
