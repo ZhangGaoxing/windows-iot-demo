@@ -25,8 +25,16 @@ InitializeAsync(), Read() and Dispose(). InitializeAsync() is used to initializi
 
 ## How to Use
 #### Attention, this project not included try{} catch{}
-First, you need to create a BH1750FVI object. After that you should call InitializeAsync() to initialize.
-
-Second, Read().
-
-If you want to close the sensor, call Dispose().
+* First, you need to create a BH1750FVI object. After that you should call InitializeAsync() to initialize.
+```C#
+BH1750FVI sensor = new BH1750FVI(AddressSetting.AddPinLow, MeasurementMode.ContinuouslyHighResolutionMode, LightTransmittance.Hundred);
+await sensor.InitializeAsync();
+```
+* Second, Read().
+```C#
+string data = sensor.Read();
+```
+* If you want to close the sensor, call Dispose().
+```C#
+sensor.Dispose();
+```
