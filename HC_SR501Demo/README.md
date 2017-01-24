@@ -17,8 +17,16 @@ You need to pass OUT pin value to create a HC-SR501 object.
 Initialize(), Read() and Dispose(). Initialize() is used to initializing the sensor. Read() returns a bool type data. Dispose() is a cleanup method.
 
 ## How to Use
-First, you need to create a HCSR501 object. After that you should call Initialize() to initialize.
-
-Second, Read().
-
-If you want to close the sensor, call Dispose().
+* First, you need to create a HCSR501 object. After that you should call Initialize() to initialize.
+```C#
+HCSR501 sensor = new HCSR501(18);
+sensor.Initialize();
+```
+* Second, Read().
+```C#
+bool data = sensor.Read();
+```
+* If you want to close the sensor, call Dispose().
+```C#
+sensor.Dispose();
+```
