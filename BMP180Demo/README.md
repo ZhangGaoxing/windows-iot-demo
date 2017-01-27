@@ -1,5 +1,5 @@
 # ZhangGaoxing's BMP180 Demo
-This is a Windows IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
 ## Attention
 Sensor data 'Altitude' is inaccurate !
@@ -28,22 +28,22 @@ Include four private methods and three public methods.
 #### Private Methods
 ```C#
 // Read calibration data from sensor
-private void ReadCalibrationData()
+private void ReadCalibrationData();
 // Get uncompensated temperature
-private async Task<double> ReadUncompensatedTempDataAsync()
+private async Task<double> ReadUncompensatedTempDataAsync();
 // Get uncompensated pressure
-private async Task<double> ReadUncompensatedPressDataAsync()
+private async Task<double> ReadUncompensatedPressDataAsync();
 // Get true data by calculating
-private void CalculateTrueData(double UT, double UP, out double T, out double P)
+private void CalculateTrueData(double UT, double UP, out double T, out double P);
 ```
 #### Public Methods
 ```C#
 // Initialize BMP180 sensor
-public async Task InitializeAsync()
+public async Task InitializeAsync();
 // Read data from BMP180 sensor
-public async Task<BMP180Data> ReadAsync()
+public async Task<BMP180Data> ReadAsync();
 // Cleanup
-public void Dispose()
+public void Dispose();
 ```
 
 ## How to Use
