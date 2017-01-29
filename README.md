@@ -7,3 +7,4 @@ ZhangGaoxing's Windows 10 Iot Core samples
 * SPI Accelerometer [ADXL345](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADXL345Demo)
 * PIR Motion Sensor [HC-SR501](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HC_SR501Demo)
 * Digital Pressure Sensor [BMP180](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/BMP180Demo)
+* Temperature & Humidity Sensor [DHT11](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DHT11Demo)
