@@ -7,7 +7,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 * GND - GND
 
 ## Reference
-In Chinese : www.aosong.com
+In Chinese : http://www.aosong.com/pdf/DHT11数字型温湿度模块-v1.2-20161012.pdf
 
 ## What Contains
 In DHT11.cs file
