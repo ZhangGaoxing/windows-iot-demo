@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="ULN2003A_Demo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ULN2003A_Demo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="ULN2003A Driver Demo" FontSize="35" Margin="15" />
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <ComboBox Name="Method" Header="Driving Method" SelectedIndex="0">
+                    <ComboBoxItem>FullStep</ComboBoxItem>
+                    <ComboBoxItem>HalfStep</ComboBoxItem>
+                    <ComboBoxItem>WaveDrive</ComboBoxItem>
+                </ComboBox>
+
+                <ComboBox Name="Direction" Header="Rotation Direction" Margin="10,0,0,0" SelectedIndex="0">
+                    <ComboBoxItem>Left</ComboBoxItem>
+                    <ComboBoxItem>Right</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Margin="10">
+                <TextBox Name="Degree" Header="Angle of Rotation" InputScope="NumericPin" />
+                <Button Name="Start" Content="Start" HorizontalAlignment="Right" Margin="0,5,0,0" Click="Start_Click" />
+            </StackPanel>
+
+            <Grid Grid.Row="1" Grid.Column="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                
+                <TextBlock Text="Keep Turning" Margin="0,4,0,0" />
+                <Button Name="Start1" Content="Start" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,5,0,0" Click="Start1_Click" />
+            </Grid>
+
+            <Button Name="Stop" Content="Stop" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10" Click="Stop_Click" />
+
+        </Grid>
+
+    </Grid>
+</Page>
