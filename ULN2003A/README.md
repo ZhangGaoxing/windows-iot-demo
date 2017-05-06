@@ -1,6 +1,9 @@
 # ZhangGaoxing's ULN2003A Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
+## Screenshot
+![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/ULN2003A/Screenshot.jpg)
+
 ## Connect
 * In1 - GPIO 26
 * In2 - GPIO 13
