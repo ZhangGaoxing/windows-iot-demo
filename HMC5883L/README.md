@@ -1,4 +1,4 @@
-# ZhangGaoxing's BMP180 Demo
+# ZhangGaoxing's HMC5883L Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
 ## Screenshot
