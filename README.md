@@ -9,3 +9,4 @@ ZhangGaoxing's Windows 10 Iot Core samples
 * Digital Pressure Sensor [BMP180](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/BMP180)
 * Temperature & Humidity Sensor [DHT11](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DHT11)
 * ULN2003A Driver(Control Stepper Motor) [ULN2003A](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ULN2003A)
+* 3-Axis Digital Compass [HMC5883L](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HMC5883L)
