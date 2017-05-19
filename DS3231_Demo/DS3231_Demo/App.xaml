@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="DS3231_Demo.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DS3231_Demo"
+    RequestedTheme="Dark">
+
+</Application>
