@@ -11,3 +11,4 @@ ZhangGaoxing's Windows 10 Iot Core samples
 * ULN2003A Driver(Control Stepper Motor) [ULN2003A](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ULN2003A)
 * 3-Axis Digital Compass [HMC5883L](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HMC5883L)
 * Realtime Clock [DS3231](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DS3231)
+* 8×8 Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219)
