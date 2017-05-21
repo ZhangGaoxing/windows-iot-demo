@@ -12,3 +12,4 @@ ZhangGaoxing's Windows 10 Iot Core samples
 * 3-Axis Digital Compass [HMC5883L](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HMC5883L)
 * Realtime Clock [DS3231](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DS3231)
 * 8×8 Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219)
+* Analog-to-Digital Converter [ADS1115](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADS1115)
