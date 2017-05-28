@@ -1,6 +1,9 @@
 # windows-iot-demo
 ZhangGaoxing's Windows 10 Iot Core samples
 
+## License
+This repository is licensed under the [__MIT License__](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/LICENSE)
+
 ## Catalogue
 * Digital Light Sensor [BH1750FVI](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/BH1750FVI)
 * Ultrasonic Distance Sensor [HC-SR04](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HC_SR04)
