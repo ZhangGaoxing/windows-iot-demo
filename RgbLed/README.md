@@ -17,7 +17,7 @@ PWM in this project is software PWM, which based on the NuGet package Microsoft.
 * First, you need to create a RgbLed object. After that you should call InitializeAsync() to initialize.
 ```C#
 // RedPin, GreenPin, BluePin, PWM Frequency
-RgbLed led = new RgbLed(17, 27, 22, 1000();
+RgbLed led = new RgbLed(17, 27, 22, 1000);
 await led.InitializeAsync();
 ```
 * Second
