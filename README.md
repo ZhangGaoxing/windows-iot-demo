@@ -16,3 +16,4 @@ This repository is licensed under the [__MIT License__](https://github.com/Zhang
 * Realtime Clock [DS3231](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DS3231)
 * 8×8 Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219)
 * Analog-to-Digital Converter [ADS1115](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADS1115)
+* Time-of-Flight Ranging Sensor [ADS1115](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/VL53L0X)
