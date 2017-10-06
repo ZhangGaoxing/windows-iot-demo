@@ -17,3 +17,4 @@ This repository is licensed under the [__MIT License__](https://github.com/Zhang
 * 8×8 Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219)
 * Analog-to-Digital Converter [ADS1115](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADS1115)
 * Time-of-Flight Ranging Sensor [VL53L0X](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/VL53L0X)
+* Infra Red thermometer Sensor [MLX90614](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MLX90614)

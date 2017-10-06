@@ -13,8 +13,8 @@ This project refered to arduion code VL53L0X.ino, because the datasheet is no us
 Files and datasheet ->  https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/VL53L0X/Reference
 
 ## Screenshot
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/VL53L0X/1.png)
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/VL53L0X/2.png)
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/VL53L0X/Reference/Img1.png)
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/VL53L0X/Reference/Img2.png)
 
 ## How to Use
 * First, you need to create a VL53L0X object. After that you should call InitializeAsync() to initialize.
