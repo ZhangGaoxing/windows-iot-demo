@@ -10,6 +10,21 @@ using Windows.UI;
 
 namespace RgbLedDemo
 {
+    /// <summary>
+    /// RGB LED Electrode Type
+    /// </summary>
+    public enum RgbType
+    {
+        /// <summary>
+        /// Common Cathode
+        /// </summary>
+        CommonCathode,
+        /// <summary>
+        /// Common Anode
+        /// </summary>
+        CommonAnode
+    }
+
     public class RgbLed : IDisposable
     {
         private PwmController controller;
@@ -23,6 +38,8 @@ namespace RgbLedDemo
         private int greenPinNum;
         private int bluePinNum;
 
+        private RgbType type;
+
         /// <summary>
         /// Create A RgbLed Object
         /// </summary>
@@ -30,12 +47,14 @@ namespace RgbLedDemo
         /// <param name="greenPin">Pin connect to green</param>
         /// <param name="bluePin">Pin connect to blue</param>
         /// <param name="frequency">PWM Frequency</param>
-        public RgbLed(int redPin, int greenPin, int bluePin, double frequency)
+        /// <param name="type">RGB LED Electrode Type</param>
+        public RgbLed(int redPin, int greenPin, int bluePin, double frequency, RgbType type)
         {
             redPinNum = redPin;
             greenPinNum = greenPin;
             bluePinNum = bluePin;
             pwmFrequency = frequency;
+            this.type = type;
         }
 
         /// <summary>
@@ -70,7 +89,14 @@ namespace RgbLedDemo
         /// <param name="percentage">Percentage(From 0 to 1)</param>
         public void SetRedPin(double percentage)
         {
-            redPin.SetActiveDutyCyclePercentage(percentage);
+            if (type == RgbType.CommonCathode)
+            {
+                redPin.SetActiveDutyCyclePercentage(percentage);
+            }
+            else
+            {
+                redPin.SetActiveDutyCyclePercentage(1.0 - percentage);
+            }
         }
 
         /// <summary>
@@ -79,7 +105,14 @@ namespace RgbLedDemo
         /// <param name="percentage">Percentage(From 0 to 1)</param>
         public void SetGreenPin(double percentage)
         {
-            greenPin.SetActiveDutyCyclePercentage(percentage);
+            if (type == RgbType.CommonCathode)
+            {
+                greenPin.SetActiveDutyCyclePercentage(percentage);
+            }
+            else
+            {
+                greenPin.SetActiveDutyCyclePercentage(1.0 - percentage);
+            }
         }
 
         /// <summary>
@@ -88,7 +121,14 @@ namespace RgbLedDemo
         /// <param name="percentage">Percentage(From 0 to 1)</param>
         public void SetBluePin(double percentage)
         {
-            bluePin.SetActiveDutyCyclePercentage(percentage);
+            if (type == RgbType.CommonCathode)
+            {
+                bluePin.SetActiveDutyCyclePercentage(percentage);
+            }
+            else
+            {
+                bluePin.SetActiveDutyCyclePercentage(1.0 - percentage);
+            }
         }
 
         /// <summary>
@@ -97,9 +137,18 @@ namespace RgbLedDemo
         /// <param name="color">Color</param>
         public void ShowColor(Color color)
         {
-            redPin.SetActiveDutyCyclePercentage(color.R / 255.0);
-            greenPin.SetActiveDutyCyclePercentage(color.G / 255.0);
-            bluePin.SetActiveDutyCyclePercentage(color.B / 255.0);
+            if (type == RgbType.CommonCathode)
+            {
+                redPin.SetActiveDutyCyclePercentage(color.R / 255.0);
+                greenPin.SetActiveDutyCyclePercentage(color.G / 255.0);
+                bluePin.SetActiveDutyCyclePercentage(color.B / 255.0);
+            }
+            else
+            {
+                redPin.SetActiveDutyCyclePercentage(1.0 - color.R / 255.0);
+                greenPin.SetActiveDutyCyclePercentage(1.0 - color.G / 255.0);
+                bluePin.SetActiveDutyCyclePercentage(1.0 - color.B / 255.0);
+            }
         }
 
         /// <summary>
@@ -108,44 +157,83 @@ namespace RgbLedDemo
         /// <param name="delay">Delay Time</param>
         public async Task BreathingAsync(int delay)
         {
-            double red = 255;
-            double green = 0;
-            double blue = 0;
-
-            while (red != 0 && green != 255)
+            if (type == RgbType.CommonCathode)
             {
-                redPin.SetActiveDutyCyclePercentage(red / 255.0);
-                greenPin.SetActiveDutyCyclePercentage(green / 255.0);
+                double red = 255;
+                double green = 0;
+                double blue = 0;
 
-                //red = red - 12.75;
-                //green = green + 12.75;
-                red--;
-                green++;
-                await Task.Delay(delay);
+                while (red != 0 && green != 255)
+                {
+                    redPin.SetActiveDutyCyclePercentage(red / 255.0);
+                    greenPin.SetActiveDutyCyclePercentage(green / 255.0);
+
+                    //red = red - 12.75;
+                    //green = green + 12.75;
+                    red--;
+                    green++;
+                    await Task.Delay(delay);
+                }
+
+                while (green != 0 && blue != 255)
+                {
+                    greenPin.SetActiveDutyCyclePercentage(green / 255.0);
+                    bluePin.SetActiveDutyCyclePercentage(blue / 255.0);
+
+                    //green = green - 12.75;
+                    //blue = blue + 12.75;
+                    green--;
+                    blue++;
+                    await Task.Delay(delay);
+                }
+
+                while (blue != 0 && red != 255)
+                {
+                    bluePin.SetActiveDutyCyclePercentage(blue / 255.0);
+                    redPin.SetActiveDutyCyclePercentage(red / 255.0);
+
+                    //blue = blue - 12.75;
+                    //red = red + 12.75;
+                    blue--;
+                    red++;
+                    await Task.Delay(delay);
+                }
             }
-
-            while (green != 0 && blue != 255)
+            else
             {
-                greenPin.SetActiveDutyCyclePercentage(green / 255.0);
-                bluePin.SetActiveDutyCyclePercentage(blue / 255.0);
+                double red = 0;
+                double green = 255;
+                double blue = 255;
 
-                //green = green - 12.75;
-                //blue = blue + 12.75;
-                green--;
-                blue++;
-                await Task.Delay(delay);
-            }
+                while (red != 255 && green != 0)
+                {
+                    redPin.SetActiveDutyCyclePercentage(red / 255.0);
+                    greenPin.SetActiveDutyCyclePercentage(green / 255.0);
 
-            while (blue != 0 && red != 255)
-            {
-                bluePin.SetActiveDutyCyclePercentage(blue / 255.0);
-                redPin.SetActiveDutyCyclePercentage(red / 255.0);
+                    red++;
+                    green--;
+                    await Task.Delay(delay);
+                }
 
-                //blue = blue - 12.75;
-                //red = red + 12.75;
-                blue--;
-                red++;
-                await Task.Delay(delay);
+                while (green != 255 && blue != 0)
+                {
+                    greenPin.SetActiveDutyCyclePercentage(green / 255.0);
+                    bluePin.SetActiveDutyCyclePercentage(blue / 255.0);
+
+                    green++;
+                    blue--;
+                    await Task.Delay(delay);
+                }
+
+                while (blue != 255 && red != 0)
+                {
+                    bluePin.SetActiveDutyCyclePercentage(blue / 255.0);
+                    redPin.SetActiveDutyCyclePercentage(red / 255.0);
+
+                    blue++;
+                    red--;
+                    await Task.Delay(delay);
+                }
             }
         }
 

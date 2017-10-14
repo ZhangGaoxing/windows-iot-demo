@@ -30,7 +30,7 @@ namespace RgbLedDemo
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            RgbLed led = new RgbLed(17, 27, 22, 1000);
+            RgbLed led = new RgbLed(17, 27, 22, 1000, RgbType.CommonAnode);
             await led.InitializeAsync();
 
             while (true)
