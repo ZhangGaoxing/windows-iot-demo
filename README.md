@@ -19,3 +19,4 @@ This repository is licensed under the [__MIT License__](https://github.com/Zhang
 * Time-of-Flight Ranging Sensor [VL53L0X](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/VL53L0X)
 * Infra Red thermometer Sensor [MLX90614](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MLX90614)
 * RGB LED With PWM [RgbLed](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/RgbLed)
+* Temperature & Humidity Sensor [AM2320](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/AM2320)
