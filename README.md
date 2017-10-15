@@ -1,5 +1,5 @@
 # windows-iot-demo
-ZhangGaoxing's Windows 10 Iot Core samples
+ZhangGaoxing's Windows 10 IoT Core samples
 
 ## License
 This repository is licensed under the [__MIT License__](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/LICENSE)
