@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -35,7 +36,7 @@ namespace DHT11Demo
             sensor.Initialize();
             DispatcherTimer timer = new DispatcherTimer
             {
-                Interval = TimeSpan.FromSeconds(1)
+                Interval = TimeSpan.FromSeconds(2)
             };
             timer.Tick += Timer_Tick;
             timer.Start();
@@ -52,6 +53,9 @@ namespace DHT11Demo
             }
 
             IsTrue.Text = data.IsTrue.ToString();
+
+            Debug.WriteLine($"Temperature:{data.Temperature}");
+            Debug.WriteLine($"Humidity:{data.Humidity}");
         }
     }
 }
