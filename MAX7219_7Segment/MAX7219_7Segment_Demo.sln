@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAX7219_7Segment_Demo", "MAX7219_7Segmen_Demo\MAX7219_7Segment_Demo.csproj", "{2F821797-800F-42E8-9E14-94939B41AA05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAX7219_7Segment_Demo", "MAX7219_7Segment_Demo\MAX7219_7Segment_Demo.csproj", "{2F821797-800F-42E8-9E14-94939B41AA05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

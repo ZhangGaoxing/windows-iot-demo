@@ -33,7 +33,7 @@ namespace OLED_Demo
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             await oled.InitializeAsync();
-
+            
             oled.ShowChar(80, 48 / 8, 16, 16, table.Zhang);
             oled.ShowChar(96, 48 / 8, 16, 16, table.Gao);
             oled.ShowChar(112, 48 / 8, 16, 16, table.Xing);
