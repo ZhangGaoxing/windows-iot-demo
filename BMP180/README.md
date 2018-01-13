@@ -13,7 +13,7 @@ This project does not include try-catch.
 * GND - GND
 
 ## Reference
-In English : https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf
+In English : https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/BMP180/Reference
 
 ## What Contains
 In BMP180.cs file

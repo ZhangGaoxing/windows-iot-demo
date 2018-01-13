@@ -13,7 +13,7 @@ ADXL345 connect to SPI
 ## Reference
 In Chinese : http://wenku.baidu.com/view/87a1cf5c312b3169a451a47e.html
 
-In English : https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf
+In English : https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADXL345/Reference
 
 ms-iot some code : https://github.com/ms-iot/samples/tree/develop/SPIAccelerometer/CS
 

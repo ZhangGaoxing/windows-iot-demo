@@ -8,7 +8,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 * GND - GND
 
 ## Introduction
-PWM in this project is software PWM, which based on the NuGet package Microsoft.IoT.Lightning. And the RGB LED is common cathode LED.
+PWM in this project is software PWM, which based on the NuGet package **Microsoft.IoT.Lightning**. And the RGB LED is common cathode LED.
 
 ## Screenshot
 ![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/RgbLed/GIF.gif)
