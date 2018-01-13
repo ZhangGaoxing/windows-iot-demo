@@ -5,9 +5,8 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 ![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/OLED/Image.jpg)
 
 ## Connect
-* DIN - MOSI
-* CS - CS0
-* CLK - SCLK
+* SDA - Pin3
+* SCL - Pin5
 * VCC - 5V
 * GND - GND
 
