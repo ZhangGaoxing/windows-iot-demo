@@ -12,7 +12,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 * GND - GND
 
 ## Reference
-https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219/PDF
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219/Reference
 
 ## What Contains
 In MAX7219.cs file

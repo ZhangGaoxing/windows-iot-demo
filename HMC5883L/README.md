@@ -14,7 +14,7 @@ I don't know how to check the sensor data, so...But the direction looks good.
 * GND - GND
 
 ## Reference
-https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HMC5883L/PDF
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HMC5883L/Reference
 
 ## What Contains
 In HMC5883L.cs file

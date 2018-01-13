@@ -14,7 +14,7 @@ No Alarm! No Alarm! No Alarm! Just read and set time.
 * GND - GND
 
 ## Reference
-https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DS3231/PDF
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DS3231/Reference
 
 ## What Contains
 In DS3231.cs file

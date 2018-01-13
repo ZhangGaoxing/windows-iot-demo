@@ -13,7 +13,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 * A0 - Your Sensor Output Pin
 
 ## Reference
-https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADS1115/PDF
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADS1115/Reference
 
 ## What Contains
 In ADS1115.cs file
