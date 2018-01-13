@@ -70,7 +70,7 @@ namespace KT0803L_Demo
         /// <param name="country">Region</param>
         /// <param name="rfgain">Transmission Power</param>
         /// <param name="pga">PGA ( Programmable Gain Amplifier ) Gain</param>
-        public async Task InitializeAsync(double mhz, Country country = Country.CHINA, RFGAIN rfgain = RFGAIN.RFGAIN_108dBuV, PGA pga = PGA.PGA_0dB)
+        public async Task InitializeAsync(double mhz, Country country = Country.CHINA, RFGAIN rfgain = RFGAIN.RFGAIN_98_9dBuV, PGA pga = PGA.PGA_0dB)
         {
             var settings = new I2cConnectionSettings(KT_ADDR);
             settings.BusSpeed = I2cBusSpeed.StandardMode;
