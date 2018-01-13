@@ -15,6 +15,7 @@ This repository is licensed under the [__MIT License__](https://github.com/Zhang
 * Infra Red thermometer Sensor [MLX90614](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MLX90614)
 * Time-of-Flight Ranging Sensor [VL53L0X](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/VL53L0X)
 * I2C OLED [OLED](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/OLED)
+* FM Radio Modulator Module [KT0803L](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/KT0803L)
 ### SPI
 * SPI Accelerometer [ADXL345](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADXL345)
 * 8×8 Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219)
