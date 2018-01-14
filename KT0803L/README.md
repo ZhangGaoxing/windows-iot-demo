@@ -1,6 +1,9 @@
 # ZhangGaoxing's KT0803L Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
+## Image
+![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/KT0803L/Image.jpg)
+
 ## Connect
 * SDA - Pin3
 * SCL - Pin5
@@ -57,6 +60,12 @@ public void SetMute(bool isMute);
 /// </summary>
 /// <param name="isStandby">Standby when value is true</param>
 public void SetStandby(bool isStandby);
+
+/// <summary>
+/// Set Bass Boost
+/// </summary>
+/// <param name="boost">Boost Mode</param>
+public void SetBassBoost(BassBoost boost);
 
 /// <summary>
 /// Cleanup

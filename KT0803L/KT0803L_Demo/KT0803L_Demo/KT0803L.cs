@@ -57,6 +57,14 @@ namespace KT0803L_Demo
         CHINA,
     }
 
+    enum BassBoost
+    {
+        Boost_Disable = 0,
+        Boost_5dB = 1,
+        Boost_11dB = 2,
+        Boost_17dB = 3
+    }
+
     class KT0803L : IDisposable
     {
         private const byte KT_ADDR = 0x3E;
@@ -302,6 +310,25 @@ namespace KT0803L_Demo
             }
 
             sensor.Write(new byte[] { 0x0B, (byte)reg4 });
+        }
+
+        /// <summary>
+        /// Set Bass Boost
+        /// </summary>
+        /// <param name="boost">Boost Mode</param>
+        public void SetBassBoost(BassBoost boost)
+        {
+            byte[] buff = new byte[1];
+
+            int reg3;
+            sensor.WriteRead(new byte[] { 0x04 }, buff);
+            reg3 = buff[0];
+
+            reg3 &= 0xFC;
+
+            reg3 |= (int)boost;
+
+            sensor.Write(new byte[] { 0x04, (byte)reg3 });
         }
 
         /// <summary>
