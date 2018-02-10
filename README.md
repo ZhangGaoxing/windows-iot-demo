@@ -25,6 +25,6 @@ This repository is licensed under the [__MIT License__](https://github.com/Zhang
 * PIR Motion Sensor [HC-SR501](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HC_SR501)
 * Temperature & Humidity Sensor [DHT11](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DHT11)
 * ULN2003A Driver(Control Stepper Motor) [ULN2003A](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ULN2003A)
-* Touch Switch(Touch Switch) [ULN2003A](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/TouchSwitch)
+* Touch Switch(Touch Switch) [TouchSwitch](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/TouchSwitch)
 ### PWM
 * RGB LED With PWM [RgbLed](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/RgbLed)
