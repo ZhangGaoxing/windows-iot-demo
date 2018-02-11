@@ -15,23 +15,13 @@ In TouchSwitch.cs file
 /// <summary>
 /// Initialize
 /// </summary>
-public void Initialize()
-{
-    var gpio = GpioController.GetDefault();
-    sensor = gpio.OpenPin(pin);
-    sensor.SetDriveMode(GpioPinDriveMode.Input);
-
-    sensor.ValueChanged += Sensor_ValueChanged;
-}
+public void Initialize();
 
 /// <summary>
 /// Read GpioPinValue
 /// </summary>
 /// <returns>GpioPinValue</returns>
-public GpioPinValue Read()
-{
-    return sensor.Read();
-}
+public GpioPinValue Read();
 
 /// <summary>
 /// Triggering when SwitchState changes
