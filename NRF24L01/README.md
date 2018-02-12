@@ -28,7 +28,7 @@ nRF2
 * IRQ - GPIO 6
 
 ## What Contains
-In TouchSwitch.cs file
+In NRF24L01.cs file
 ```C#
 /// <summary>
 /// Initialize
