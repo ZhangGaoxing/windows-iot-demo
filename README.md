@@ -20,6 +20,7 @@ This repository is licensed under the [__MIT License__](https://github.com/Zhang
 * SPI Accelerometer [ADXL345](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADXL345)
 * 8×8 Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219)
 * 7 Segment Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219_7Segment)
+* Single chip 2.4 GHz Transceiver [NRF24L01](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/NRF24L01)
 ### GPIO
 * Ultrasonic Distance Sensor [HC-SR04](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HC_SR04)
 * PIR Motion Sensor [HC-SR501](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HC_SR501)
