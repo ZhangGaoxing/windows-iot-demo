@@ -90,11 +90,11 @@ namespace NRF24L01_Demo
     {
         private SpiDevice sensor;
         private GpioPin ce;
-        private GpioPin iro;
+        private GpioPin irq;
 
         private int CS;
         private int CE;
-        private int IRO;
+        private int IRQ;
         private string spi;
 
         private byte packetSize;
@@ -140,15 +140,15 @@ namespace NRF24L01_Demo
         /// </summary>
         /// <param name="CSN">CSN Pin</param>
         /// <param name="CE">CE Pin</param>
-        /// <param name="IRO">IRO Pin</param>
+        /// <param name="IRQ">IRQ Pin</param>
         /// <param name="SPI">SPI Friendly Name,like 'SPI0', 'SPI1'.</param>
         /// <param name="packetSize">Receive Packet Size</param>
-        public NRF24L01(int CSN, int CE, int IRO, string SPI, byte packetSize)
+        public NRF24L01(int CSN, int CE, int IRQ, string SPI, byte packetSize)
         {
             this.CS = CSN;
             this.spi = SPI;
             this.CE = CE;
-            this.IRO = IRO;
+            this.IRQ = IRQ;
             this.packetSize = packetSize;
         }
 
@@ -167,10 +167,10 @@ namespace NRF24L01_Demo
 
             var gpio = GpioController.GetDefault();
             ce = gpio.OpenPin(CE);
-            iro = gpio.OpenPin(IRO);
+            irq = gpio.OpenPin(IRQ);
             ce.SetDriveMode(GpioPinDriveMode.Output);
-            iro.SetDriveMode(GpioPinDriveMode.Input);
-            iro.ValueChanged += Iro_ValueChanged;
+            irq.SetDriveMode(GpioPinDriveMode.Input);
+            irq.ValueChanged += Irq_ValueChanged;
 
             await Task.Delay(50);
             SetRxPayload(packetSize);
@@ -558,7 +558,7 @@ namespace NRF24L01_Demo
         /// </summary>
         public event ReceivedDataHandle ReceivedData;
 
-        private void Iro_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
+        private void Irq_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
         {
             if (args.Edge == GpioPinEdge.FallingEdge)
             {

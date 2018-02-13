@@ -54,7 +54,7 @@ public byte[] Receive(byte length);
 * First, you need to create a NRF24L01 object. After that you should call InitializeAsync() to initialize.
 ```C#
 // Create and Initialize
-// CSN Pin, CE Pin, IRO Pin, SPI Friendly Name, Receive Packet Size
+// CSN Pin, CE Pin, IRQ Pin, SPI Friendly Name, Receive Packet Size
 NRF24L01 sender = new NRF24L01(0, 23, 24, "SPI0", 12);
 NRF24L01 receiver = new NRF24L01(0, 5, 6, "SPI1", 12);
 
