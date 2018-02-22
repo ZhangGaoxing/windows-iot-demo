@@ -16,7 +16,7 @@ nRF1
 * CSN - SPI0 CS0 (GPIO 8)
 * CE - GPIO 23
 * IRQ - GPIO 24
-* 
+
 nRF2
 * VCC - 3.3V (Best)
 * GND - GND
