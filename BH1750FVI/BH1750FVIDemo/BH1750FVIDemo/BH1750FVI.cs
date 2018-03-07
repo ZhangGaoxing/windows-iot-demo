@@ -194,5 +194,14 @@ namespace BH1750FVIDemo
         {
             sensor.Dispose();
         }
+
+        /// <summary>
+        /// Get BH1750FVI Device
+        /// </summary>
+        /// <returns></returns>
+        public I2cDevice GetDevice()
+        {
+            return sensor;
+        }
     }
 }
