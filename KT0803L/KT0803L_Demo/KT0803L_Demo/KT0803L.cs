@@ -332,6 +332,15 @@ namespace KT0803L_Demo
         }
 
         /// <summary>
+        /// Get KT0803L Device
+        /// </summary>
+        /// <returns></returns>
+        public I2cDevice GetDevice()
+        {
+            return sensor;
+        }
+
+        /// <summary>
         /// Cleanup
         /// </summary>
         public void Dispose()
