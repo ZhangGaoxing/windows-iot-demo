@@ -54,7 +54,7 @@ namespace OLED_Demo
         /// Send command
         /// </summary>
         /// <param name="command">Command</param>
-        private void WriteCommand(byte command)
+        public void WriteCommand(byte command)
         {
             sensor.Write(new byte[] { 0x00, command });
         }
@@ -101,6 +101,15 @@ namespace OLED_Demo
                     WriteData(data2);
                 }
             }
+        }
+
+        /// <summary>
+        /// Get OLED Device
+        /// </summary>
+        /// <returns>OLED</returns>
+        public I2cDevice GetDevice()
+        {
+            return sensor;
         }
 
         /// <summary>
