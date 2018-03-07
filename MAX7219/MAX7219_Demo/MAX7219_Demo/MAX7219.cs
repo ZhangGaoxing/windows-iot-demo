@@ -69,7 +69,7 @@ namespace MAX7219_Demo
         const byte MAX_TEST_REG_ADDR = 0x0F;
         #endregion
 
-        private SpiDevice led;
+        private SpiDevice sensor;
 
         private int chipSelect;
 
@@ -90,9 +90,9 @@ namespace MAX7219_Demo
 
             string aqs = SpiDevice.GetDeviceSelector();
             var dis = await DeviceInformation.FindAllAsync(aqs);
-            led = await SpiDevice.FromIdAsync(dis[0].Id, settings);
+            sensor = await SpiDevice.FromIdAsync(dis[0].Id, settings);
 
-            led.Write(new byte[] { MAX_SCAN_REG_ADDR, 0x07 });
+            sensor.Write(new byte[] { MAX_SCAN_REG_ADDR, 0x07 });
             SetPower(PowerMode.Normal);
         }
 
@@ -103,7 +103,7 @@ namespace MAX7219_Demo
         /// <param name="val">Printed data</param>
         public void SetRow(int row, byte val)
         {
-            led.Write(new byte[] { MAX_DIG_REG_ADDR[row], val });
+            sensor.Write(new byte[] { MAX_DIG_REG_ADDR[row], val });
         }
 
         /// <summary>
@@ -112,7 +112,7 @@ namespace MAX7219_Demo
         /// <param name="mode">Mode</param>
         public void SetDecode(DecodeMode mode)
         {
-            led.Write(new byte[] { MAX_DECODE_REG_ADDR, (byte)mode });
+            sensor.Write(new byte[] { MAX_DECODE_REG_ADDR, (byte)mode });
         }
 
         /// <summary>
@@ -123,7 +123,7 @@ namespace MAX7219_Demo
         {
             if (val >= 0 && val <=16)
             {
-                led.Write(new byte[] { MAX_INTENSITY_REG_ADDR, (byte)val });
+                sensor.Write(new byte[] { MAX_INTENSITY_REG_ADDR, (byte)val });
             }
             else
             {
@@ -137,7 +137,7 @@ namespace MAX7219_Demo
         /// <param name="mode">Mode</param>
         public void DisplayTest(DisplayTestMode mode)
         {
-            led.Write(new byte[] { MAX_TEST_REG_ADDR, (byte)mode });
+            sensor.Write(new byte[] { MAX_TEST_REG_ADDR, (byte)mode });
         }
 
         /// <summary>
@@ -146,7 +146,12 @@ namespace MAX7219_Demo
         /// <param name="mode">Mode</param>
         public void SetPower(PowerMode mode)
         {
-            led.Write(new byte[] { MAX_POWER_REG_ADDR, (byte)mode });
+            sensor.Write(new byte[] { MAX_POWER_REG_ADDR, (byte)mode });
+        }
+
+        public SpiDevice GetDevice()
+        {
+            return sensor;
         }
 
         /// <summary>
@@ -155,7 +160,7 @@ namespace MAX7219_Demo
         public void Dispose()
         {
             SetPower(PowerMode.Shutdown);
-            led.Dispose();
+            sensor.Dispose();
         }
     }
 }
