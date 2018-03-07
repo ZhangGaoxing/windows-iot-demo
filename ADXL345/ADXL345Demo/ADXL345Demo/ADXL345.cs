@@ -111,6 +111,15 @@ namespace ADXL345Demo
         }
         
         /// <summary>
+        /// Get ADX1345 Device
+        /// </summary>
+        /// <returns></returns>
+        public SpiDevice GetDevice()
+        {
+            return adxl345;
+        }
+
+        /// <summary>
         /// Cleanup
         /// </summary>
         public void Dispose()
