@@ -285,5 +285,10 @@ namespace ADS1115_Demo
         {
             adc.Dispose();
         }
+
+        public I2cDevice GetDevice()
+        {
+            return adc;
+        }
     }
 }
