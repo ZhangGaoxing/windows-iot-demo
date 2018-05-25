@@ -123,6 +123,15 @@ namespace DS3231_Demo
         }
 
         /// <summary>
+        /// Get DS3231 Device
+        /// </summary>
+        /// <returns></returns>
+        public I2cDevice GetDevice()
+        {
+            return sensor;
+        }
+
+        /// <summary>
         /// Cleanup
         /// </summary>
         public void Dispose()

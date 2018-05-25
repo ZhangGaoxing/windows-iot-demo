@@ -100,6 +100,15 @@ namespace HMC5883L_Demo
         }
 
         /// <summary>
+        /// Get HMC5883L Device
+        /// </summary>
+        /// <returns></returns>
+        public I2cDevice GetDevice()
+        {
+            return sensor;
+        }
+
+        /// <summary>
         /// Cleanup
         /// </summary>
         public void Dispose()

@@ -50,6 +50,15 @@ namespace MLX90614Demo
         }
 
         /// <summary>
+        /// Get MLX90614 Device
+        /// </summary>
+        /// <returns></returns>
+        public I2cDevice GetDevice()
+        {
+            return sensor;
+        }
+
+        /// <summary>
         /// Cleanup
         /// </summary>
         public void Dispose()

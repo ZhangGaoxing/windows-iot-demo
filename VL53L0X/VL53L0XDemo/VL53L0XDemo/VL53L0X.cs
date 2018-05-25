@@ -87,6 +87,11 @@ namespace VL53L0XDemo
             return readBuf[0];
         }
 
+        public I2cDevice GetDevice()
+        {
+            return sensor;
+        }
+
         public void Dispose()
         {
             sensor.Dispose();

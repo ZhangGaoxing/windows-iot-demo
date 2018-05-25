@@ -139,6 +139,15 @@ namespace BMP180Demo
             sensor.Dispose();
         }
 
+        /// <summary>
+        /// Get BMP180 Device
+        /// </summary>
+        /// <returns></returns>
+        public I2cDevice GetDevice()
+        {
+            return sensor;
+        }
+
         #region Private Methods
 
         /// <summary>
