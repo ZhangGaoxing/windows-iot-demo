@@ -23,50 +23,66 @@ namespace IRTM_Demo
     {
         SerialDevice serialDevice = null;
 
+        /// <summary>
+        /// Initialize YS-IRTM
+        /// </summary>
         public async Task InitializeAsync()
         {
             string aqs = SerialDevice.GetDeviceSelector("UART0");                   
             var dis = await DeviceInformation.FindAllAsync(aqs);                    
-            serialDevice = await SerialDevice.FromIdAsync(dis[0].Id);  
+            serialDevice = await SerialDevice.FromIdAsync(dis[0].Id);
 
+            serialDevice.ReadTimeout = TimeSpan.FromSeconds(1);
             serialDevice.BaudRate = 9600;                                           
             serialDevice.Parity = SerialParity.None; 
             serialDevice.StopBits = SerialStopBitCount.One;             
             serialDevice.DataBits = 8;
         }
 
-        public async void Send(byte[] code)
+        /// <summary>
+        /// Send Order
+        /// </summary>
+        /// <param name="code">Order</param>
+        public async Task SendAsync(byte[] code)
         {
             DataWriter dataWriter = new DataWriter();
             dataWriter.WriteBytes(new byte[] { 0xA1, 0xF1 }.Concat(code).ToArray());
             uint bytesWritten = await serialDevice.OutputStream.WriteAsync(dataWriter.DetachBuffer());
         }
 
-        public async Task<byte[]> ReadAsync(int len = 3)
+        /// <summary>
+        /// Read Order
+        /// </summary>
+        public async Task<byte[]> ReadAsync()
         {
             DataReader dataReader = new DataReader(serialDevice.InputStream);
-            await dataReader.LoadAsync(dataReader.UnconsumedBufferLength);
-            byte[] buffer = new byte[len];
-            try
+            var count = await dataReader.LoadAsync(dataReader.UnconsumedBufferLength);
+            byte[] buffer = null;
+            if (count > 0)
             {
+                buffer = new byte[count];
                 dataReader.ReadBytes(buffer);
-            }
-            catch
-            {
-                
             }
 
             return buffer;
         }
 
-        public async void SetAddress(byte address)
+        /// <summary>
+        /// Set YS-IRTM Address
+        /// </summary>
+        /// <param name="address">Address from 1 to FF</param>
+        public async Task SetAddressAsync(byte address)
         {
             DataWriter dataWriter = new DataWriter();
             dataWriter.WriteBytes(new byte[] { 0xA1, 0xF2, address, 0x00, 0x00 });
             await serialDevice.OutputStream.WriteAsync(dataWriter.DetachBuffer());
         }
 
-        public async void SetBaudRate(IrtmBaudRate rate)
+        /// <summary>
+        /// Set YS-IRTM Baud Rate
+        /// </summary>
+        /// <param name="rate">Baud Rate</param>
+        public async Task SetBaudRateAsync(IrtmBaudRate rate)
         {
             byte order = 0x02;
             uint br = 9600;
@@ -99,11 +115,18 @@ namespace IRTM_Demo
             serialDevice.BaudRate = br;
         }
 
+        /// <summary>
+        /// Return YS-IRTM
+        /// </summary>
+        /// <returns>YS-IRTM</returns>
         public SerialDevice GetDevice()
         {
             return serialDevice;
         }
 
+        /// <summary>
+        /// Cleanup
+        /// </summary>
         public void Dispose()
         {
             serialDevice.Dispose();

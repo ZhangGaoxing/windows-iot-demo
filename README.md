@@ -16,11 +16,13 @@ This repository is licensed under the [__MIT License__](https://github.com/Zhang
 * Time-of-Flight Ranging Sensor [VL53L0X](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/VL53L0X)
 * I2C OLED [OLED](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/OLED)
 * FM Radio Modulator Module [KT0803L](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/KT0803L)
+
 ### SPI
 * SPI Accelerometer [ADXL345](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADXL345)
 * 8×8 Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219)
 * 7 Segment Display Driver [MAX7219](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219_7Segment)
 * Single chip 2.4 GHz Transceiver [NRF24L01](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/NRF24L01)
+
 ### GPIO
 * Ultrasonic Distance Sensor [HC-SR04](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HC_SR04)
 * PIR Motion Sensor [HC-SR501](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HC_SR501)
@@ -28,5 +30,9 @@ This repository is licensed under the [__MIT License__](https://github.com/Zhang
 * ULN2003A Driver(Control Stepper Motor) [ULN2003A](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ULN2003A)
 * Touch Switch [TouchSwitch](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/TouchSwitch)
 * Liquid Crystal Display 16x02 [LCD1602](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/LCD1602)
+
 ### PWM
 * RGB LED With PWM [RgbLed](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/RgbLed)
+
+### Serial UART
+* Infrared Remote Decoder Encoding Transmitter & Receiver Module [YS-IRTM](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/IRTM)

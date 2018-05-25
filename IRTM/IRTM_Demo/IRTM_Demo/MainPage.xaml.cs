@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -31,14 +32,9 @@ namespace IRTM_Demo
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             IRTM irtm = new IRTM();
-
             await irtm.InitializeAsync();
-            while (true)
-            {
-                var buffer = await irtm.Read();
 
-                Debug.WriteLine($"{buffer[0]} {buffer[1]} {buffer[2]}");
-            }
+            irtm.SendAsync(new byte[] { 0x01, 0x02, 0x03 });
         }
     }
 }
