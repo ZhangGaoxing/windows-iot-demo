@@ -1,8 +1,12 @@
 # ZhangGaoxing's ADXL345 Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The ADXL345 is a small, thin, low power, 3-axis accelerometer with high resolution (13-bit) measurement at up to ±16g.
+
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/ADXL345/02_Image/sensor.jpg)
 
 ## Connect
 ADXL345 connect to SPI
+
 * VCC - 3.3 V
 * GND -  GND
 * CS - CS0 - Pin24
@@ -13,7 +17,7 @@ ADXL345 connect to SPI
 ## Reference
 In Chinese : http://wenku.baidu.com/view/87a1cf5c312b3169a451a47e.html
 
-In English : https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADXL345/Reference
+In English : https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADXL345/01_Datasheet
 
 ms-iot some code : https://github.com/ms-iot/samples/tree/develop/SPIAccelerometer/CS
 
