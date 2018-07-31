@@ -1,5 +1,8 @@
 # ZhangGaoxing's DHT11 Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The DHT11 is a temperature and humidity module.
+
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/DHT11/02_Image/sensor.jpg)
 
 ## Connect
 * OUT - Pin 3
@@ -7,7 +10,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 * GND - GND
 
 ## Reference
-https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/DHT11/Reference
+https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/DHT11/01_Datasheet
 
 ## What Contains
 In DHT11.cs file
