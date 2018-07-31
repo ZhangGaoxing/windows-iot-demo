@@ -1,8 +1,8 @@
 # ZhangGaoxing's ADS1115 Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The ADS1115 is an Analog-to-Digital converter (ADC) with 16 bits of resolution.
 
-## Image
-![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/ADS1115/Image.png)
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/ADS1115/02_Image/sensor.jpg)
 
 ## Connect
 * ADDR - GND
@@ -13,7 +13,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 * A0 - Your Sensor Output Pin
 
 ## Reference
-https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADS1115/Reference
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/ADS1115/01_Datasheet
 
 ## What Contains
 In ADS1115.cs file
@@ -63,3 +63,6 @@ double vol = adc.RawToVoltage(raw);
 ```C#
 adc.Dispose();
 ```
+
+## Demo Result
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/ADS1115/02_Image/result.jpg)
