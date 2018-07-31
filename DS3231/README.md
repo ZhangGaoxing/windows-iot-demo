@@ -1,11 +1,8 @@
 # ZhangGaoxing's DS3231 Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The DS3231 is a low-cost, extremely accurate I2C realtime clock (RTC) with an integrated temperature compensated crystal oscillator (TCXO) and crystal.
 
-## Screenshot
-![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/DS3231/Screenshot.jpg)
-
-## Attention
-No Alarm! No Alarm! No Alarm! Just read and set time.
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/DS3231/02_Image/sensor.jpg)
 
 ## Connect
 * SDA - Pin3
@@ -14,7 +11,7 @@ No Alarm! No Alarm! No Alarm! Just read and set time.
 * GND - GND
 
 ## Reference
-https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DS3231/Reference
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/DS3231/01_Datasheet
 
 ## What Contains
 In DS3231.cs file
@@ -60,3 +57,6 @@ double temp = sensor.ReadTemperature();
 ```C#
 sensor.Dispose();
 ```
+
+## Demo Result
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/DS3231/02_Image/result.jpg)
