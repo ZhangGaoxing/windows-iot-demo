@@ -1,10 +1,8 @@
 # ZhangGaoxing's BMP180 Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The BMP180 is the function compatible successor of the BMP085, a new generation of high precision digital pressure sensors for consumer applications.
 
-## Attention
-Sensor data 'Altitude' is inaccurate !
-
-This project does not include try-catch.
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/BMP180/02_Image/sensor.jpg)
 
 ## Connect
 * SDA - Pin3
@@ -13,7 +11,7 @@ This project does not include try-catch.
 * GND - GND
 
 ## Reference
-In English : https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/BMP180/Reference
+In English : https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/BMP180/01_Datasheet
 
 ## What Contains
 In BMP180.cs file
