@@ -34,7 +34,7 @@ namespace IRTM_Demo
             IRTM irtm = new IRTM();
             await irtm.InitializeAsync();
 
-            irtm.SendAsync(new byte[] { 0x01, 0x02, 0x03 });
+            await irtm.SendAsync(new byte[] { 0x01, 0x02, 0x03 });
         }
     }
 }

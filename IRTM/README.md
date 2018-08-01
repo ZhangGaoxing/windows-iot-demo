@@ -1,9 +1,8 @@
 # ZhangGaoxing's YS-IRTM Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
-## Image
-![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/IRTM/Image/YS-IRTM.jpg)
-
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/IRTM/02_Image/sensor.jpg)
 
 ## Reference
 <https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/IRTM/Reference>
