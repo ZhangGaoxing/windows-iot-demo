@@ -1,13 +1,18 @@
 # ZhangGaoxing's HC-SR501 Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. HC-SR501 is used to detect motion based on the infrared heat in the surrounding area. 
+
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/HC_SR501/02_Image/sensor.jpg)
 
 ## Connect
 * VCC - 5V
 * GND - GND
-* OUT - GPIO 18- Pin 12
+* OUT - GPIO 18 - Pin 12
 
 ## Reference
 In Chinese : http://wenku.baidu.com/view/26ef5a9c49649b6648d747b2.html
+
+In English : https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/HC_SR501/01_Datasheet
 
 ## What Contains
 In HCSR501.cs file
