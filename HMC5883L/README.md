@@ -1,11 +1,8 @@
 # ZhangGaoxing's HMC5883L Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The HMC5883L is a surface-mount, multi-chip module designed for low-field magnetic sensing with a digital interface for applications such as lowcost compassing and magnetometry.
 
-## Screenshot
-![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/HMC5883L/Screenshot.jpg)
-
-## Attention
-I don't know how to check the sensor data, so...But the direction looks good.
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/HMC5883L/02_Image/sensor.jpg)
 
 ## Connect
 * SDA - Pin3
@@ -56,3 +53,6 @@ double angle = sensor.RawToDirectionAngle(data);
 ```C#
 sensor.Dispose();
 ```
+
+## Demo Result
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/HMC5883L/02_Image/result.jpg)
