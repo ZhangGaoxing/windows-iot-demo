@@ -1,11 +1,11 @@
 # ZhangGaoxing's LCD1602 Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The LCD1602 is a liquid crystal display.
 
-## Image
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/LCD1602/Img.jpg)
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/LCD1602/02_Image/sensor.jpg)
 
 ## Connect
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/LCD1602/8_data_line.png)
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/LCD1602/02_Image/8_data_line.png)
 
 In 4 data line
 * VSS - GND
@@ -36,6 +36,8 @@ In 8 data line
 * D7 - GPIO 26
 
 ## Reference
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/LCD1602/01_Datasheet
+
 https://wenku.baidu.com/view/036d5449ff4733687e21af45b307e87101f6f828.html
 
 ## What Contains
