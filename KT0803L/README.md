@@ -1,8 +1,8 @@
 # ZhangGaoxing's KT0803L Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. KT0803L is designed to process high-fidelity stereo audio signal and transmit modulated FM signal over a short range.
 
-## Image
-![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/KT0803L/Image.jpg)
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/KT0803L/02_Image/sensor.jpg)
 
 ## Connect
 * SDA - Pin3
