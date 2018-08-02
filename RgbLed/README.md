@@ -4,7 +4,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 PWM in this project is software PWM, which based on the NuGet package **Microsoft.IoT.Lightning**. And the RGB LED is common cathode LED.
 
 ## Sensor Image
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/LED/02_Image/sensor.gif)
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/RgbLed/02_Image/sensor.gif)
 
 ## Connect
 * R - Pin17
