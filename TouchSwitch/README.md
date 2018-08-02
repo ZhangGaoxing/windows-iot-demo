@@ -1,8 +1,8 @@
 # ZhangGaoxing's TouchSwitch Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
-## Image
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/TouchSwitch/img.png)
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/TouchSwitch/02_Image/sensor.jpg)
 
 ## Connect
 * VCC - 5V
@@ -51,3 +51,6 @@ private void TouchSwitch_SwitchStateChanged(object sender, SwitchStateChangedEve
 ```C#
 touchSwitch.Dispose();
 ```
+
+## Demo Result
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/TouchSwitch/02_Image/result.png)
