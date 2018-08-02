@@ -1,11 +1,11 @@
 # ZhangGaoxing's NRF24L01 Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The nRF24L01 is a single chip radio transceiver for the world wide 2.4 - 2.5 GHz ISM band. 
 
-## Image
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/NRF24L01/img.png)
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/NRF24L01/02_Image/sensor.jpg)
 
 ## Connect
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/NRF24L01/NRF_bb.jpg)
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/NRF24L01/02_Image/NRF_bb.jpg)
 
 nRF1
 * VCC - 3.3V (Best)
@@ -85,3 +85,6 @@ private void Receiver_ReceivedData(object sender, ReceivedDataEventArgs e)
 sender.Dispose();
 receiver.Dispose();
 ```
+
+## Demo Result
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/NRF24L01/02_Image/result.png)
