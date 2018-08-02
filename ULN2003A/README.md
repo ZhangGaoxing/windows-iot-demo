@@ -1,8 +1,8 @@
 # ZhangGaoxing's ULN2003A Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
-## Screenshot
-![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/ULN2003A/Screenshot.jpg)
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/ULN2003A/02_Image/sensor.jpg)
 
 ## Connect
 * In1 - GPIO 26
@@ -14,10 +14,6 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 https://github.com/erickbp/IoT/tree/master/Stepper%20Motor
 
 http://edi.wang/post/2016/4/4/windows-10-iot-stepper-motor
-
-## What Have I Changed
-* You can input a different __Step Angle__ value to control other stepper motor.
-* Added some notes.
 
 ## How to Use
 * First, you need to create a ULN2003A object
@@ -32,3 +28,6 @@ await uln2003a.TurnAsync(degree, stepAngle, TurnDirection.Left, DrivingMethod.Fu
 ```C#
 uln2003a.Dispose();
 ```
+
+## Demo Result
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/ULN2003A/02_Image/result.jpg)
