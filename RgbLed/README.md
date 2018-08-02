@@ -1,17 +1,16 @@
 # ZhangGaoxing's RGB LED Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
+PWM in this project is software PWM, which based on the NuGet package **Microsoft.IoT.Lightning**. And the RGB LED is common cathode LED.
+
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/LED/02_Image/sensor.gif)
+
 ## Connect
 * R - Pin17
 * G - Pin27
 * B - Pin22
 * GND - GND
-
-## Introduction
-PWM in this project is software PWM, which based on the NuGet package **Microsoft.IoT.Lightning**. And the RGB LED is common cathode LED.
-
-## Screenshot
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/RgbLed/GIF.gif)
 
 ## How to Use
 * First, you need to create a RgbLed object. After that you should call InitializeAsync() to initialize.
