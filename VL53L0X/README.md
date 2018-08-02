@@ -1,5 +1,8 @@
 # ZhangGaoxing's VL53L0X Demo
-This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
+This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#. The VL53L0X is a new generation Time-of-Flight (ToF) laser-ranging module.
+
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/VL53L0X/02_Image/sensor.jpg)
 
 ## Connect
 * SDA - Pin3
@@ -8,13 +11,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 * GND - GND
 
 ## Reference
-This project refered to arduion code VL53L0X.ino, because the datasheet is no useful information... So I don't know how to read and write...
-
-Files and datasheet ->  https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/VL53L0X/Reference
-
-## Screenshot
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/VL53L0X/Reference/Img1.png)
-![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/VL53L0X/Reference/Img2.png)
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/VL53L0X/01_Datasheet
 
 ## How to Use
 * First, you need to create a VL53L0X object. After that you should call InitializeAsync() to initialize.
@@ -33,3 +30,6 @@ short dis = sensor.ReadDistance();
 ```C#
 sensor.Dispose();
 ```
+
+## Demo Result
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/VL53L0X/02_Image/result.png)
