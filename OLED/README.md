@@ -1,8 +1,8 @@
 # ZhangGaoxing's OLED Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
-## Image
-![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/OLED/Image.jpg)
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/OLED/02_Image/sensor.jpg)
 
 ## Connect
 * SDA - Pin3
