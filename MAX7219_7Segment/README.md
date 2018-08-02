@@ -1,8 +1,8 @@
 # ZhangGaoxing's MAX7219 Demo
 This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 
-## Image
-![](https://github.com/ZhangGaoxing/windows-iot-demo/blob/master/MAX7219_7Segment/Image.jpg)
+## Sensor Image
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/MAX7219_7Segment/02_Image/sensor.jpg)
 
 ## Connect
 * DIN - MOSI
@@ -12,7 +12,7 @@ This is a Windows 10 IoT Core project on the Raspberry Pi 2/3, coded by C#.
 * GND - GND
 
 ## Reference
-https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219/Reference
+https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/MAX7219_64LED/Reference
 
 ## What Contains
 In MAX7219.cs file
