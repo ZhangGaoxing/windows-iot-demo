@@ -8,6 +8,9 @@ If this repository helped you, **give it a Star**. Or you had some problems, **r
 ## License
 This repository is licensed under the [__MIT License__](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/LICENSE) © [Zhang Yuexin](https://zhangyue.xin)
 
+## Pin Map
+![](https://raw.githubusercontent.com/ZhangGaoxing/windows-iot-demo/master/img/RP2_Pinout.png)
+
 ## Catalogue
 ### I2C
 * Analog-to-Digital Converter [ADS1115](https://github.com/ZhangGaoxing/windows-iot-demo/tree/master/src/ADS1115)
