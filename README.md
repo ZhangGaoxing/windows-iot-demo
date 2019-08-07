@@ -1,4 +1,7 @@
 # windows-iot-demo
+
+### This repository has been merged to [dotnet/iot](https://github.com/dotnet/iot).
+
 This repository is ZhangGaoxing's Windows 10 IoT Core samples, coded by C#, and tested on the Raspberry Pi 2/3. It is a collection of sample code for common sensors on the market.
 
 Just copy the **cs class** of the sensors you need to your project, very easy.
